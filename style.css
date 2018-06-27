@@ -3,13 +3,10 @@ body{
 	padding: 0;
 }
 .container{
-	display: grid;
+	/*display: grid;
 	grid-template-areas:
 	'header-logo' 'header-logo'
-	'header-nav' 'header-nav'
-	'image slider1' 'image slider2'
-	'news slider' 'news slider'
-	'new release' 'new release2';
+	'footer' 'footer';*/
 
 
 }
@@ -32,13 +29,13 @@ body{
 }
 .header-nav-products{
 	position: relative;
+	display: inline-block;
 }
 
 .header-nav-products-subproduct{
 	display: none;
 	position: absolute;
 	min-width: 180px;
-	z-index: 1;
 }
 .header-nav-products-subproduct a{
 	color: white;
@@ -47,3 +44,16 @@ body{
 }
 
 .header-nav-products:hover .header-nav-products-subproduct{display: block;}
+
+.footer{
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.footer-left>div>ul{
+	list-style: none;
+}
+.footer-center-content p{
+	text-align: center;
+}
