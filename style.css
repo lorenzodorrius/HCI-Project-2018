@@ -7,18 +7,23 @@ body{
 	grid-template-areas:
 	'header-logo' 'header-logo'
 	'footer' 'footer';*/
-
+	width: 100%;
+	height: 100%;
 
 }
 .header{
+	height: 200px;
 	display: grid;
 	grid-row: 2;
 	background-color: #293745;
 	color: white;
 	font-family: "Verdana";
 	font-size: 10pt;
+	height: 
 }
-
+.header-logo{
+	height: auto;
+}
 .header-nav,.header-logo{
 	display: flex;
 	flex-flow: row wrap;
@@ -45,15 +50,33 @@ body{
 
 .header-nav-products:hover .header-nav-products-subproduct{display: block;}
 
+.main{
+	display: flex;
+	flex-direction: column;
+}
+
 .footer{
 	display: flex;
 	justify-content: space-between;
-
+	background-color: #293745;
+	color: white;
+	font-family: "Verdana";
 }
 
 .footer-left>div>ul{
 	list-style: none;
 }
-.footer-center-content p{
+
+.footer-left-content>ul>li>a{
+	text-decoration: none;
+	color: white;
+}
+.footer-center{
 	text-align: center;
+}
+
+.footer-right{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
