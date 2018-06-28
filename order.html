@@ -27,16 +27,16 @@
 
 		<div class="main">
 			<div class="order-form">
-			<form>
+			<form name="form" onsubmit="return validateForm()">
 			    <p class="form-title">Order Form</p>
-			    <input type="email" name="email" placeholder="Email Address">
-			    <br>
 			    <span class="two-col"><input type="text" name="firstname" placeholder="First Name"></span>
 			    <span class="two-col"><input type="text" name="lastname" placeholder="Last Name"></span>
 			    <br>
-			    <input type="text" name="address" placeholder="Address">
+			    <input type="email" name="email" placeholder="Email Address">
 			    <br>
-			    <input type="text" name="city" placeholder="City">
+			    <input type="tel" name="phone" placeholder="Phone Number">
+			    <br>
+			    <input type="text" name="address" placeholder="Address">
 			    <br>
 			    <input type="text" name="clothes" placeholder="Clothes">
 			    <br>
@@ -48,7 +48,11 @@
 			        <option value="XS">XS</option>
 			      </select>
 			    <span>Qty: </span><input type="number" name="qty" min="1" value="1">
-			    <br><br>
+			    <br>
+			    <br>
+			    <input type="checkbox" name="clothes" placeholder="Clothes"><span>I accept the terms and conditions</span>
+			    <br>
+			    <br>
 			    <input type="submit" value="Submit">
 			  </form> 
 			</div>
