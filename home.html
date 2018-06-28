@@ -4,7 +4,31 @@
 	<title>
 		Women's Fashion | Mister Loco
 	</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="home-style.css">
+	<script src="script/jquery-latest.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$slideCount = $('#slider .slides .slide').length;
+			$slideWidth = $('#slider .slides .slide').width();
+			$slideHeight = $('#slider .slides .slide').height();
+			$totalWidth = $slideCount*$slideWidth;
+			$('#slider').css({
+				width: $slideWidth,
+				height: $slideHeight
+			});
+			$('#slider .slides').css({
+				width: $totalWidth,
+				marginLeft: -$slideWidth
+			});
+		});
+		setInterval(function(){
+			$('#slider .slides').animate({left: - $slideWidth}, 1000,
+				function(){
+					$('#slider .slides .slide:first-child').appendTo('#slider .slides');
+					$('#slider .slides').css('left', '');
+			});
+		}, 5000);
+	</script>
 </head>
 <body>
 	<div class="container">
@@ -15,8 +39,8 @@
 			<div class="header-nav">
 				<div class="header-nav-products">PRODUCTS
 					<div class="header-nav-products-subproduct">
-						<a  href="#">Swimwear</a>
-						<a  href="#">Bikini</a>
+						<a  href="#">SWIMWEAR</a>
+						<a  href="#">BIKINI</a>
 					</div>
 				</div>
 				<div class="header-nav-order">ORDER</div>
@@ -26,12 +50,13 @@
 		</div>
 
 		<div class="main">
-			<div class="main-slider">
-				Main Slider
+			<div id="slider">
+			   <div class="slides">
+			      <div class="slide"><img src="img/1.jpg" /></div>
+			      <div class="slide"><img src="img/2.jpg" /></div>			      
+			      <div class="slide"><img src="img/3.jpg" /></div>
+			   </div>
 			</div>
-			<div class="main-news">
-				Main News
-			</div>	
 		</div>
 
 		<div class="footer">
@@ -85,4 +110,5 @@
 		</div>
 	</div>
 </body>
+
 </html>
