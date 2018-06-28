@@ -1,0 +1,173 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	/*display: grid;
+	grid-template-areas:
+	'header-logo' 'header-logo'
+	'footer' 'footer';*/
+	width: 100%;
+	height: 100%;
+
+}
+.header{
+	height: 200px;
+	display: grid;
+	grid-row: 2;
+	background-color: #293745;
+	color: white;
+	font-family: "Verdana";
+	font-size: 10pt;
+	height: 
+}
+.header-logo{
+	height: auto;
+}
+.header-nav,.header-logo{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+.header-nav>div{
+	margin: 25px;
+}
+.header-nav-products{
+	position: relative;
+	display: inline-block;
+}
+
+.header-nav-products-subproduct{
+	display: none;
+	position: absolute;
+	min-width: 180px;
+}
+.header-nav-products-subproduct a{
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+
+.header-nav-products:hover .header-nav-products-subproduct{display: block;}
+
+.main{
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-us{
+	margin-bottom: 60px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	background-image: url("Untitled.png");
+}
+
+.banner-content{
+	padding-top: 0px;
+	padding-right: 30px;
+	padding-bottom: 0px;
+	padding-left: 30px;
+	align-self: center;
+	margin: auto;
+}
+
+.banner-content h1{
+  margin-top: 100px;
+  font-size: 50px;
+  text-align: center;
+  font-family: "Verdana";
+  font-weight: normal;
+  justify-content: center;
+}
+
+.banner-content p{
+  font-size: 20px;
+  text-transform: none;
+  text-align: center;
+}
+
+.row{
+	margin-top: 0px;
+	margin-right: -15px;
+	margin-bottom: 0px;
+	margin-left: -15px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.col{
+	padding-top: 0px;
+	padding-right: 15px;
+	padding-bottom: 0px;
+	padding-left: 15px;
+	font-family: Verdana;
+}
+
+.m6{
+	width: 50%;
+}
+
+.s12{
+	width: 100%;
+}
+
+.emails{
+	font-family: Verdana;
+	font-size: 30px;
+}
+
+.date{
+	padding: 0px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	text-transform: none;
+}
+
+.text-uppercase{
+	text-transform: uppercase;
+}
+
+.social-media{
+	margin-bottom: 40px;
+}
+
+svg:not(:root){
+	overflow: hidden;
+	fill: inherit;
+	stroke: inherit;
+}
+
+.address-block{
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+
+.footer{
+	display: flex;
+	justify-content: space-between;
+	background-color: #293745;
+	color: white;
+	font-family: "Verdana";
+}
+
+.footer-left>div>ul{
+	list-style: none;
+}
+
+.footer-left-content>ul>li>a{
+	text-decoration: none;
+	color: white;
+}
+.footer-center{
+	text-align: center;
+}
+
+.footer-right{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
